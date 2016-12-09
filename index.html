@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blasting Off with Bootstrap</title>
+    <link href='css/main.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+    <div class="navbar navbar-default navbar-static-top">
+        <div class='container'>
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">Blasting Off With Bootstrap</a>
+
+                <button type="button" class="navbar-toggle"
+                        data-toggle='collapse' data-target='.navbar-collapse'>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                <!-- sr-only class will make the text only visible to software for visually impaired poeple -->
+                <!-- navbar-toggle class makes the button float to the right -->
+                <!-- data-toggle attribute engages JS -->
+                <!-- data-target attribute tells JS which element to act on -->
+
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                    <li><a href='tickets.html'>Tickets</a></li>
+                    <li><a href='stations.html'>Stations</a></li>
+                    <li>
+                        <a href='#' data-toggle='dropdown'>About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="story.html">Our Story</a></li>
+                            <li class="divider"></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="divider"></li>
+                            <!-- divider class creates horizontal lines b/w links -->
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+
+<!-- MAIN MESSAGE WITH BUTTONS -->
+    <div class="container">
+        <div class="row text-center well well-lg">
+          <div class='col-md-6'>
+              <h2>The Fastest Way to Space</h2>
+              <p class="lead">Make your way to space in the comfort of your own rocket, elevator or transporter.</p>
+
+              <!-- 1st BUTTON -->
+              <div class='btn-group'>
+                <button type='button' class='btn btn-default btn-lg dropdown-toggle' data-toggle='dropdown'>
+                  Take the Tour <span class='caret'></span>
+                </button>
+                <ul class='dropdown-menu'>
+                  <li><a href='#'>Transporter</a></li>
+                  <li><a href='#'>Orbital Elevator</a></li>
+                  <li><a href='#'>RocketBus</a></li>
+                  <li class="divider"></li>
+                  <li><a href='#'>Learn More</a></li>
+                </ul>
+              </div>
+
+              <!-- 2ND BUTTON -->
+              <button type='button' class="btn btn-lg btn-primary">Book Tickets Now</button>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs">
+              <img src="http://codeschool.github.io/BlastingOffWithBootstrapDemo/images/img-header.jpg" alt="people in space">
+          </div>
+        </div>
+    </div>
+
+
+<!-- 3 COLUMNS -->
+    <div class="row text-center features">
+        <div class='container'>
+          <div class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+              <i class="glyphicon glyphicon-briefcase"></i>
+              <h3>Book Today!</h3>
+              <p>Even if you're traveling tomorrow, you can still get tickets today. We have a number of conveniently located ports around the globe to service everyone.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+              <i class="glyphicon glyphicon-heart"></i>
+              <h3>Go Anywhere</h3>
+              <p>If you need to get to space today, why not try out a transporter? Despite the claims, there are have been no deaths in the last 6 weeks!</p>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+              <i class="glyphicon glyphicon-send"></i>
+              <h3>RocketBus&reg;</h3>
+              <p>For cheapest fares, catch the next RocketBus&reg; to the stars. Cheaper on your wallet, and easiest way to make friends.</p>
+          </div>
+        </div>
+    </div>
+
+
+<!-- QUOTE -->
+<div class='quote'>
+      <div class='container'>
+        <blockquote>
+          <p>Any sufficiently advanced technology is indistinguishable from magic.</p>
+          <footer>Arthur C. Clarke in <cite title="Source Title">Profiles of the Future</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+
+<!-- TRANSPORT SYSTEMS -->
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <h2>Plan Your Trip Today!</h2>
+
+          <ul class='nav nav-tabs'>
+            <li class='active'><a href='#time'>Todays Times</a></li>
+            <li><a href='#deals'>Hot Deals</a></li>
+            <li><a href='#forecast'>Forecast</a></li>
+          </ul>
+
+          <div class='tab-content'>
+            <div class='tab-pane fade active' id='time'>
+              <p>Todays Time here</p>
+            </div>
+            <div class='tab-pane fade' id='deals'>
+              <p>Deals here</p>
+            </div>
+            <div class='tab-pane fade' id='forecast'>
+              <p>Forecast</p>
+            </div>
+          </div>
+        </div>
+
+<!-- WARNINGS -->
+        <div class='col-md-3 col-md-offset-1'>
+          <div class='panel-group'>
+            <div class='panel panel-success'>
+              <div class='panel-heading'>
+                <h4 class='panel-title'>
+                  <a href='#systemsOperational' data-toggle='collapse' data-parent='.panel-group'>All Systems Operational</a>
+                </h4>
+              </div>
+              <div id='systemsOperational' class='collapse panel-collapse in'>
+                <div class='panel-body'>
+                  <p>All systems are operational</p>
+                  <ul class='list-unstyled'>
+                    <li><i class='glyphicon glyphicon-ok'></i>  Transporters</li>
+                    <li><i class='glyphicon glyphicon-ok'></i>  Space Elevator</li>
+                    <li><i class='glyphicon glyphicon-ok'></i>  RocketBus</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class='panel panel-warning'>
+              <div class='panel-heading'>
+                 <h4 class='panel-title'>
+                   <a href='#weatherAlert' data-toggle='collapse' data-parent='.panel-group'>Weather Alert</a>
+                 </h4>
+              </div>
+              <div id='weatherAlert' class='collapse panel-collapse'>
+                <div class='panel-body'>
+                  <p>The National Weather Service has issued a solar flare watch for the following time periods. Please plan accordingly:</p>
+                  <ul class='list-unstyled'>
+                    <li><strong>February 9th, 21:43</strong></li>
+                    <li><strong>May 18, 19:82</strong></li>
+                    <li><strong>July 4, 08:42</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class='panel panel-danger'>
+              <div class='panel-heading'>
+                <h4 class='panel-title'>
+                  <a href='#transportationWarning' data-toggle='collapse' data-parent='.panel-group'>Transportation Generals Warning: Transporters</a>
+                </h4>
+              </div>
+              <div id='transportationWarning' class='collapse panel-collapse'>
+                <div class='panel-body'>
+                  <p>Technically, transporting means making a clone of yourself and killing off the other one. If you believe in a soul, you should be aware of this fact before attempting travel using a transporter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class='footer'>
+    <div class='container'>
+        <div class='row'>
+          <div class='col-md-3 col-sm-4 col-xs-6'>
+            <h4>Who We Are</h4>
+            <p><i>Blasting Off With Bootstrap</i> is the fastest way to space. <a href='tickets.html'>Book your ticket today</a>!</p>
+            <p><a href='about.html'>More About Us <i class='glyphicon glyphicon-arrow-right'></i></a></p>
+          </div>
+
+          <div class='col-md-offset-1 col-sm-2 col-xs-6'>
+            <h4>Links</h4>
+            <ul class='list-unstyled'>
+              <li><a href='index.html'>Home</a></li>
+              <li><a href='tickets.html'>Tickets</a></li>
+              <li><a href='stations.html'>Stations</a></li>
+            </ul>
+          </div>
+
+          <div class='clearfix visible-xs'></div>
+
+          <div class='col-sm-2 col-xs-6'>
+            <h4>Stay in Touch</h4>
+            <ul class='list-unstyled'>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='contact.html'>Contact Us</a></li>
+              <li><a href='/blog'>Blog</a></li>
+              <li><a href='http://twitter.com/codeschool'>Twitter</a></li>
+              <li><a href='http://facebook.com/codeschool'>Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class='col-md-3 col-md-offset-1 col-sm-4 col-xs-6'>
+            <h4>Contact Us</h4>
+            <ul class='list-unstyled'>
+              <li><i class='glyphicon glyphicon-globe'></i> Orlando, FL</li>
+              <li><i class='glyphicon glyphicon-phone'></i> 1-555-blast-off</li>
+              <li><i class='glyphicon glyphicon-envelope'></i> <a href='mailto:blastingoff@codeschool.com'>blastingoff@codeschool.com</a></li>
+            </ul>
+            <p>Blasting Off With Bootstrap &copy;2214.</p>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <!-- <script src='js/bootstrap.js'></script> -->
+
+
+<!-- JS FOR TABS -->
+    <script>
+      $(function() {
+        $('.nav-tabs a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+      });
+    </script>
+
+</body>
+</html>
